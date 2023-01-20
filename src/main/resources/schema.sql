@@ -1,0 +1,1 @@
+CREATE INDEX idx_size ON shoes (size);

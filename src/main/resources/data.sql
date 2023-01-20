@@ -1,0 +1,15 @@
+INSERT INTO shoes (id, model, brand, size, stock) VALUES
+(default, 'Zueco Susa', 'Sarkany', 25.0, 10),
+(default, 'Sandalia Van', 'Sarkany', 24.0, 30),
+(default, 'Plataforma Free', 'Sarkany', 25.5, 20),
+(default, 'LiteRide', 'Crocs', 25.0, 10),
+(default, 'CrocBand', 'Crocs', 28.0, 70),
+(default, 'Sand Men', 'Hush Puppies', 25.0, 15),
+(default, 'Sand Men', 'Hush Puppies', 28.0, 18),
+(default, 'Sand Men', 'Hush Puppies', 26.5, 23),
+(default, 'Sand Men', 'Hush Puppies', 26.0, 0),
+(default, 'Suede Classic', 'Puma', 25.0, 10),
+(default, 'Suede Classic', 'Puma', 25.5, 17),
+(default, 'Suede Classic', 'Puma', 26.0, 30),
+(default, 'Suede Classic', 'Puma', 26.5, 0),
+(default, 'R78 Runner', 'Puma', 29.0, 5);
