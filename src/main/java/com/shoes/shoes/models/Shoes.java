@@ -1,30 +1,39 @@
 package com.shoes.shoes.models;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
+import java.io.Serial;
+import java.io.Serializable;
+import java.util.UUID;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Entity
 @Table(name = "shoes")
 @ToString
-public class Shoes {
+public class Shoes implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Getter @Setter @Column(name = "id", updatable = false, nullable = false)
+    @Column(name = "id", updatable = false, nullable = false)
     private Long id;
 
-    @Getter @Setter @Column(name = "model")
+    @Column(name = "model", nullable = false, length = 50)
     private String model;
 
-    @Getter @Setter @Column(name = "brand")
+    @Column(name = "brand", nullable = false, length = 50)
     private String brand;
 
-    @Getter @Setter @Column(name="size")
+    @Column(name="size", nullable = false)
     private Double size;
 
-    @Getter @Setter @Column(name = "stock")
+    @Column(name = "stock", nullable = false)
     private Integer stock;
 
 }
